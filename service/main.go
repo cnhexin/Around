@@ -161,7 +161,7 @@ func saveToBigTable(p *Post, id string) {
 		panic(err)
 		return 
 	}
-
+	fmt.Printf("Post is")
 	tbl := bt_client.Open("post") 
 	mut := bigtable.NewMutation()
 	t := bigtable.Now()
